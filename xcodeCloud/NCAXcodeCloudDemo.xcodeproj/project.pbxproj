@@ -143,6 +143,8 @@
 			dependencies = (
 			);
 			name = NCAXcodeCloudDemo;
+			packageProductDependencies = (
+			);
 			productName = xcodeCloud;
 			productReference = 704587F62AA9C2D400169A3C /* NCAXcodeCloudDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +217,10 @@
 				Base,
 			);
 			mainGroup = 704587ED2AA9C2D400169A3C;
+			packageReferences = (
+				704B9A7F2B020A20003F4889 /* XCRemoteSwiftPackageReference "topay-mobile-wallet-ios" */,
+				704B9A802B020FF3003F4889 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 704587F72AA9C2D400169A3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		704B9A7F2B020A20003F4889 /* XCRemoteSwiftPackageReference "topay-mobile-wallet-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://extranet.netcetera.biz/bitbucket/scm/nca422tpmw/topay-mobile-wallet-ios.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		704B9A802B020FF3003F4889 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = exactVersion;
+				version = 0.51.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 704587EE2AA9C2D400169A3C /* Project object */;
 }

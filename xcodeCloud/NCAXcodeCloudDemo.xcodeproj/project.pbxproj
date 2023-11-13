@@ -14,6 +14,7 @@
 		7045880B2AA9C2D600169A3C /* xcodeCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045880A2AA9C2D600169A3C /* xcodeCloudTests.swift */; };
 		704588152AA9C2D600169A3C /* xcodeCloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704588142AA9C2D600169A3C /* xcodeCloudUITests.swift */; };
 		704588172AA9C2D600169A3C /* xcodeCloudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704588162AA9C2D600169A3C /* xcodeCloudUITestsLaunchTests.swift */; };
+		708825F52B02275000D256BA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 708825F42B02275000D256BA /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708825F52B02275000D256BA /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,7 @@
 			);
 			name = NCAXcodeCloudDemo;
 			packageProductDependencies = (
+				708825F42B02275000D256BA /* Lottie */,
 			);
 			productName = xcodeCloud;
 			productReference = 704587F62AA9C2D400169A3C /* NCAXcodeCloudDemo.app */;
@@ -218,8 +221,8 @@
 			);
 			mainGroup = 704587ED2AA9C2D400169A3C;
 			packageReferences = (
-				704B9A7F2B020A20003F4889 /* XCRemoteSwiftPackageReference "topay-mobile-wallet-ios" */,
 				704B9A802B020FF3003F4889 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				708825F32B02275000D256BA /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 704587F72AA9C2D400169A3C /* Products */;
 			projectDirPath = "";
@@ -599,14 +602,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		704B9A7F2B020A20003F4889 /* XCRemoteSwiftPackageReference "topay-mobile-wallet-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://extranet.netcetera.biz/bitbucket/scm/nca422tpmw/topay-mobile-wallet-ios.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
 		704B9A802B020FF3003F4889 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/SwiftLint";
@@ -615,7 +610,23 @@
 				version = 0.51.0;
 			};
 		};
+		708825F32B02275000D256BA /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		708825F42B02275000D256BA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708825F32B02275000D256BA /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 704587EE2AA9C2D400169A3C /* Project object */;
 }

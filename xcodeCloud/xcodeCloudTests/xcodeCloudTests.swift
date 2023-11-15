@@ -23,7 +23,7 @@ class CalculatorTests: XCTestCase {
     }
 
     func testAddition() {
-        XCTAssertEqual(calculator.add(2, 3), 5, "Addition is incorrect")
+        XCTAssertEqual(calculator.add(2, 3), 6, "Addition is incorrect")
         XCTAssertEqual(calculator.add(-2, 3), 1, "Addition with negative numbers is incorrect")
     }
 
